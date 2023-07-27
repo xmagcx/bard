@@ -1,0 +1,5 @@
+
+docker build . -t bard
+docker run -d -p 8080:80 bard
+
+uvicorn app:app --reload --port 8080
